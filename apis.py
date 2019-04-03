@@ -10,9 +10,9 @@ logging.config.fileConfig('logging.conf')
 logger = logging.getLogger()
 
 api = Api(
-	title='PAX Message Intelligence (PAMI) engine',
+	title='PAX Intelligence Engine',
 	version='1.0.0',
-	description='PAX Message Intelligence (PAMI) engine',
+	description='PAX Intelligence Engine',
 )
 
 if args.activate_detection:
