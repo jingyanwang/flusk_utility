@@ -12,7 +12,7 @@ logger = logging.getLogger()
 api = Api(
 	title='PAX Intelligence Engine',
 	version='1.0.0',
-	description='PAX Intelligence Engine',
+	description='Developed by PAX DS team',
 )
 
 if args.activate_detection:
