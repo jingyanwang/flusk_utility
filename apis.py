@@ -10,7 +10,7 @@ logging.config.fileConfig('logging.conf')
 logger = logging.getLogger()
 
 api = Api(
-	title='PAX Intelligence Engine',
+	title='',
 	version='1.0.0',
 )
 
