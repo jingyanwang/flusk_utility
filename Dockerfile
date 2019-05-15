@@ -36,9 +36,6 @@ WORKDIR /root
 RUN git clone https://github.com/jingyanwang/flusk_utility.git
 RUN mv flusk_utility/* ./
 
-RUN git clone https://github.com/jingyanwang/sms_utility.git
-RUN mv sms_utility/*.py ./
-
 COPY ./*.py /root/
 
 CMD python3 app_path.py
