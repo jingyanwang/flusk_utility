@@ -63,7 +63,6 @@ class pami(Resource):
 			start = time.time()
 			output = {}
 			output['running_time'] = float(time.time()- start)
-			return output, 200
 			output['error'] = 'success'
 			return output, 200
 		except Exception as e:
