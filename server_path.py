@@ -62,9 +62,10 @@ class pami(Resource):
 			args = parser.parse_args()
 			start = time.time()
 			output = {}
-			end = time.time()	
-			output['running_time'] = end - start
+			output['running_time'] = float(time.time()- start)
 			return output, 200
-		except:
-			return {'error': 'failed'}
+			output['error'] = 'success'
+			return output, 200
+		except Exception as e:
+			return {'error': str(e)}
 ##############
