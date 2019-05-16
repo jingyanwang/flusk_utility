@@ -10,4 +10,4 @@ to build a rest api docker
 
 5. docker run -it -p [port number]:9000 <docker id>
 
-6. go to web explorer and open http://<sever ip>:<port number>/
+6. go to web explorer and open http://[sever ip]:[port number]/
