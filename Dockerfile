@@ -36,7 +36,7 @@ WORKDIR /root
 RUN git clone https://github.com/jingyanwang/flusk_utility.git
 RUN mv flusk_utility/* ./
 
-COPY ./*.py /root/
+#COPY all your files to /root/
 
 CMD python3 app_path.py
 ##################
