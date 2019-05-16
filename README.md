@@ -8,6 +8,6 @@ to build a rest api docker
 
 4. docker build -t docker_template .
 
-5. docker run -it -p <port number>:9000 <docker id>
+5. docker run -it -p [port number]:9000 <docker id>
 
 6. go to web explorer and open http://<sever ip>:<port number>/
