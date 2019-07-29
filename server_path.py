@@ -35,17 +35,18 @@ class pami(Resource):
 		super(pami, self).__init__(*args, **kwargs)
 	@ns.marshal_with(pami_rsp)
 	@ns.expect(pami_req)
-	def post(self):
-		output = {}
+	def post(self):		
 		start = time.time()
 		try:			
-			args = parser.parse_args()			
+			args = parser.parse_args()		
+			output = {}
 			output['attribute'] = [{'entity':args['text'],\
 						     'score':0.978}]
 			output['error'] = 'success'
 			output['running_time'] = float(time.time()- start)
 			return output, 200
 		except Exception as e:
+			output = {}
 			output['error'] = str(e)
 			output['running_time'] = float(time.time()- start)
 			return output
