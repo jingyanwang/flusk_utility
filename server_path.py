@@ -5,7 +5,7 @@ import argsparser
 from flask_restplus import *
 from flask import *
 
-ns = Namespace('pami', description='')
+ns = Namespace('jingyanwang_api', description='')
 args = argsparser.prepare_args()
 
 parser = ns.parser()
