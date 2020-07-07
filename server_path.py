@@ -14,7 +14,7 @@ parser.add_argument('text', type=str, location='json')
 req_fields = {'text': fields.String(\
 	example = u"this is an input text")\
 	}
-pami_req = ns.model('pami_req', req_fields)
+jingyanwang_api_req = ns.model('jingyanwang_api_req', req_fields)
 
 attribute = ns.model('', \
 	{'entity': fields.String,\
@@ -27,14 +27,14 @@ rsp_fields = {\
 	'running_time':fields.Float\
 	}
 
-pami_rsp = ns.model('pami_rsp', rsp_fields)
+jingyanwang_api_rsp = ns.model('jingyanwang_api_rsp', rsp_fields)
 
 @ns.route('/predict')
-class pami(Resource):
+class jingyanwang_api(Resource):
 	def __init__(self, *args, **kwargs):
-		super(pami, self).__init__(*args, **kwargs)
-	@ns.marshal_with(pami_rsp)
-	@ns.expect(pami_req)
+		super(jingyanwang_api, self).__init__(*args, **kwargs)
+	@ns.marshal_with(jingyanwang_api_rsp)
+	@ns.expect(jingyanwang_api_req)
 	def post(self):		
 		start = time.time()
 		try:			
