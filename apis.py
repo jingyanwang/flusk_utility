@@ -1,5 +1,5 @@
 #########
-from flask_restplus import Api
+from flask_restx import Api
 from server_path import ns as ns1
 import argsparser
 import os, logging.config
