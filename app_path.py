@@ -8,5 +8,9 @@ app = Flask(__name__)
 
 app.config.update(PROPAGATE_EXCEPTIONS=True)
 api.init_app(app)
-app.run(args.host, args.port, use_reloader=False)
+
+app.run(
+	host = '0.0.0.0', 
+	port = 3941, 
+	use_reloader = False)
 ##############
