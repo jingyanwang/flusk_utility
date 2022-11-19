@@ -18,14 +18,13 @@ RUN pip3 install flasgger==0.9.5
 RUN pip3 install Werkzeug==2.2.2
 RUN pip3 install flask-restx==1.0.3
 
-#RUN git clone https://github.com/jingyanwang/flusk_utility.git
-#RUN mv flusk_utility/* ./
-
-RUN echo "d1g2s12"
-
-COPY *  /root/
-
 WORKDIR /root
+
+RUN git clone https://github.com/jingyanwang/flusk_utility.git
+RUN mv flusk_utility/* ./
+
+#RUN echo "d1g2s12"
+#COPY *  /root/
 
 CMD python3 app_path.py
 ##################
