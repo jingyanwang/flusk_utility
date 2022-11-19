@@ -18,4 +18,4 @@ docker build -t flask_swagger:1.0.1 .
 docker run -it -p 0.0.0.0:3941:3941 flask_swagger:1.0.1
 ```
 
-6. go to web explorer and open localhost:3941/
+6. go to web explorer and open [localhost:3941/](http://localhost:3941/)
