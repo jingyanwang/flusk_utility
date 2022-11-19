@@ -6,8 +6,16 @@ to build a rest api docker
 
 3. wget https://raw.githubusercontent.com/jingyanwang/flusk_utility/master/Dockerfile
 
-4. docker build -t docker_template .
+4. 
 
-5. docker run -it -p 0.0.0.0:3941:3941 91ff1deb9a73
+```bash
+docker build -t flask_swagger:1.0.1 .
+```
 
-6. go to web explorer and open http://0.0.0.0:3941/
+5. 
+
+```bash
+docker run -it -p 0.0.0.0:3941:3941 flask_swagger:1.0.1
+```
+
+6. go to web explorer and open http://localhost:3941/
