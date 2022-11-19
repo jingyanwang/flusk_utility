@@ -12,6 +12,10 @@ to build a rest api docker
 docker build -t flask_swagger:1.0.1 .
 ```
 
-5. docker run -it -p 0.0.0.0:3941:3941 91ff1deb9a73
+5. 
+
+```bash
+docker run -it -p 0.0.0.0:3941:3941 flask_swagger:1.0.1
+```
 
 6. go to web explorer and open http://0.0.0.0:3941/
