@@ -12,5 +12,5 @@ api.init_app(app)
 app.run(
 	host = '0.0.0.0', 
 	port = 3941, 
-	use_reloader = False)
+	use_reloader = True)
 ##############
