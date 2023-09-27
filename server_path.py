@@ -54,7 +54,7 @@ extraction_parser = ns.parser()
 extraction_parser.add_argument('chunk', type=str, location='json')
 
 extraction_inputs = ns.model(
-	'my_space', 
+	'my_space1', 
 		{
 			'chunk': fields.String(example = u"this is a chunk")
 		}
